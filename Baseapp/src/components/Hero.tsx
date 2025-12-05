@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import masterDataRaw from '../data/results/hooli_response_20251205_103437_40c357a08365411586460b648ebd9b85.json';
+import masterData from '../data/results/generate-chat-gpt.json';
 // import masterData from '../data/master.json';
 import { translations, getLanguageFromURL } from '../i18n';
 

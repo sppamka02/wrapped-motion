@@ -12,19 +12,19 @@
             "title": "Lorem ipsum",
             "value": "8,7",
             "description": "Biljoner följare på dina företags sociala medier-konton",
-            "hint": "Hint"
+            "hint": ""
           },
           {
             "title": "Lorem ipsum",
             "value": "731",
             "description": "Antalet patent dina företag har sökt under året",
-            "hint": "Hint"
+            "hint": ""
           },
           {
             "title": "Lorem ipsum",
             "value": "3 981 181",
             "description": "anställda jobbar för dina företag",
-            "hint": "Hint"
+            "hint": ""
           }
         ]
       }

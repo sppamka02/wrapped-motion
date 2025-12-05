@@ -1,0 +1,181 @@
+{
+  "slides": [
+    {
+      "slideNumber": 0,
+      "isLanding": true,
+      "title": "Din Fondförsäkring 2025",
+      "subtitle": "Se hur din portfölj har utvecklats under året",
+      "prompt": "Get overview statistics social media followers, patents, and employees for the top 3 comopanies tou are invested in",
+      "data": {
+        "stats": [
+          {
+            "title": "Sociala medier",
+            "value": "70",
+            "description": "miljoner följare på dina tre största bolags sociala medier-konton (Apple, Microsoft och Nvidia – uppskattat tvärs över flera plattformar).",
+            "hint": "Stora globala techbolag har enorm räckvidd, vilket ger dina investeringar extra genomslag."
+          },
+          {
+            "title": "Patent",
+            "value": "40 000+",
+            "description": "patentfamiljer och patentansökningar kopplade till Apple och Nvidia, plus ytterligare tusentals från Microsoft.",
+            "hint": "Det här speglar hur mycket dina bolag satsar på forskning och utveckling."
+          },
+          {
+            "title": "Anställda",
+            "value": "430 000",
+            "description": "anställda jobbar på Apple, Microsoft och Nvidia år 2025.",
+            "hint": "Bakom dina investeringar står hundratusentals människor som bygger framtidens teknik."
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 1,
+      "title": "Dina Toppinnehav",
+      "subtitle": "Dina viktigaste investeringar",
+      "prompt": "Get the top 5 holdings sorted by percentage of portfolio",
+      "data": {
+        "holdings": [
+          {
+            "name": "NVIDIA Corp",
+            "ticker": "NVDA",
+            "amountInvestedSek": 45179,
+            "percentOfPortfolio": 2.5
+          },
+          {
+            "name": "Apple Inc",
+            "ticker": "AAPL",
+            "amountInvestedSek": 36803,
+            "percentOfPortfolio": 2.0
+          },
+          {
+            "name": "Investor AB Class B",
+            "ticker": "INVE-B.ST",
+            "amountInvestedSek": 34926,
+            "percentOfPortfolio": 1.9
+          },
+          {
+            "name": "Microsoft Corp",
+            "ticker": "MSFT",
+            "amountInvestedSek": 34148,
+            "percentOfPortfolio": 1.9
+          },
+          {
+            "name": "Volvo AB Class B",
+            "ticker": "VOLV-B.ST",
+            "amountInvestedSek": 24366,
+            "percentOfPortfolio": 1.3
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 2,
+      "title": "Din Portfölj i Siffror",
+      "prompt": "Get portfolio statistics including total invested, number of holdings, and average position",
+      "data": {
+        "totalInvested": 1837575.65,
+        "numberOfHoldings": 4026,
+        "averagePosition": 456.43
+      }
+    },
+    {
+      "slideNumber": 3,
+      "title": "Ditt År i Sammanfattning",
+      "prompt": "Get portfolio summary with diversification score",
+      "data": {
+        "numberOfHoldings": 4026,
+        "maxPercent": 2.46,
+        "diversificationScore": 94,
+        "message": "Du är indirekt delägare i drygt 4 000 bolag. Det största enskilda innehavet (Nvidia) är bara cirka 2,5 % av portföljen – en mycket bred och väl diversifierad mix av svenska kvalitetsbolag och globala teknikjättar."
+      }
+    },
+    {
+      "slideNumber": 4,
+      "title": "Din Framtid Väntar",
+      "prompt": "Get inspirational closing message",
+      "data": {
+        "message": "Du har låtit dina pengar jobba i bakgrunden hela året.",
+        "subtitle": "Tillsammans med tusentals andra sparare äger du en liten bit av framtidens teknik, sjukvård och hållbara lösningar.",
+        "emojis": [
+          "🌍",
+          "📈",
+          "🤝",
+          "🌱",
+          "💡",
+          "🚀"
+        ]
+      }
+    },
+    {
+      "slideNumber": 5,
+      "title": "Din Resa Under Året",
+      "subtitle": "Se hur din portfölj har utvecklats",
+      "prompt": "Get monthly performance data showing value and return for each month",
+      "data": {
+        "monthlyPerformance": [
+          {
+            "month": "Jan",
+            "value": 1676922,
+            "return": 1.2
+          },
+          {
+            "month": "Feb",
+            "value": 1690337,
+            "return": 0.8
+          },
+          {
+            "month": "Mar",
+            "value": 1648079,
+            "return": -2.5
+          },
+          {
+            "month": "Apr",
+            "value": 1672800,
+            "return": 1.5
+          },
+          {
+            "month": "Maj",
+            "value": 1706256,
+            "return": 2.0
+          },
+          {
+            "month": "Jun",
+            "value": 1723318,
+            "return": 1.0
+          },
+          {
+            "month": "Jul",
+            "value": 1743998,
+            "return": 1.2
+          },
+          {
+            "month": "Aug",
+            "value": 1726558,
+            "return": -1.0
+          },
+          {
+            "month": "Sep",
+            "value": 1735191,
+            "return": 0.5
+          },
+          {
+            "month": "Okt",
+            "value": 1769895,
+            "return": 2.0
+          },
+          {
+            "month": "Nov",
+            "value": 1822992,
+            "return": 3.0
+          },
+          {
+            "month": "Dec",
+            "value": 1837576,
+            "return": 0.8
+          }
+        ]
+      }
+    }
+  ]
+}
