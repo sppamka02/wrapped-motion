@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { animate } from 'motion';
 import { translations, getLanguageFromURL } from '../i18n';
-import masterData from '../../../Baseapp/src/data/master.json';
+import masterData from '../../../Baseapp/src/data/dataSource';
 
 const Slide4: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);

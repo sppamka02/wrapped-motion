@@ -1,0 +1,126 @@
+{
+  "slides": [
+    {
+      "slideNumber": 0,
+      "isLanding": true,
+      "title": "Din Fondförsäkring 2025",
+      "subtitle": "Se hur din portfölj har utvecklats under året",
+      "prompt": "Get overview statistics social media followers, patents, and employees for the top 3 comopanies tou are invested in",
+      "data": {
+        "stats": [
+          {
+            "title": "Social räckvidd",
+            "value": "70 miljoner",
+            "description": "Den samlade följarskaran över sociala medier från dina tre största innehav: Apple, Microsoft och Nvidia.",
+            "hint": "Techbolag driver enorm global synlighet."
+          },
+          {
+            "title": "Innovation",
+            "value": "40 000+",
+            "description": "Aktiva patentfamiljer och nya patentansökningar kopplade till Apple och Nvidia, samt betydande FoU från Microsoft.",
+            "hint": "Patent speglar framtidssatsningar."
+          },
+          {
+            "title": "Människor bakom bolagen",
+            "value": "430 000",
+            "description": "Så många anställda jobbar på Apple, Microsoft och Nvidia tillsammans.",
+            "hint": "En global arbetskraft som bygger framtiden."
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 1,
+      "title": "Dina Största Innehav",
+      "subtitle": "Så ser toppositionerna ut",
+      "prompt": "Get the top 5 holdings sorted by percentage of portfolio",
+      "data": {
+        "holdings": [
+          {
+            "name": "NVIDIA Corp",
+            "ticker": "NVDA",
+            "amountInvestedSek": 45179,
+            "percentOfPortfolio": 2.46
+          },
+          {
+            "name": "Apple Inc",
+            "ticker": "AAPL",
+            "amountInvestedSek": 36803,
+            "percentOfPortfolio": 2.00
+          },
+          {
+            "name": "Investor AB B",
+            "ticker": "INVE-B",
+            "amountInvestedSek": 34926,
+            "percentOfPortfolio": 1.90
+          },
+          {
+            "name": "Microsoft Corp",
+            "ticker": "MSFT",
+            "amountInvestedSek": 34148,
+            "percentOfPortfolio": 1.86
+          },
+          {
+            "name": "Volvo AB B",
+            "ticker": "VOLV-B",
+            "amountInvestedSek": 24366,
+            "percentOfPortfolio": 1.33
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 2,
+      "title": "Din Portfölj i Siffror",
+      "prompt": "Get portfolio statistics including total invested, number of holdings, and average position",
+      "data": {
+        "totalInvested": 1837575.65,
+        "numberOfHoldings": 4026,
+        "averagePosition": 456.43
+      }
+    },
+    {
+      "slideNumber": 3,
+      "title": "Ditt År i Sammanfattning",
+      "prompt": "Get portfolio summary with diversification score",
+      "data": {
+        "numberOfHoldings": 4026,
+        "maxPercent": 2.46,
+        "diversificationScore": 94,
+        "message": "Din portfölj är mycket väl spridd – över 4 000 bolag globalt. Det största innehavet (Nvidia) är endast runt 2,5 %, vilket ger stabilitet och bred marknadsexponering."
+      }
+    },
+{
+      "slideNumber": 4,
+      "title": "Din Framtid Väntar",
+      "prompt": "Get inspirational closing message in Swedish. In one sentence, explain how the portfolio is changing the world for the better, with concrete examples of products. Do not mention specific brands, keep it slightly generic. Take into account the 50 most important companies in the portfolio. Write in a way that feels sincere and personal to the reader. In addition, include 8 emojis to summarize the 50 most important companies in the portfolio. Do not include emojis that show people. Use emojis that can work with the whole portfolio, not just a single company. Do not include emojis that only highlight increased portfolio value. Add a series of 6 Swedish words to summarize the same 50 companies.  Use words that can work with the whole portfolio, not just a single company. Do not include words that only highlight portfolio performance. Only output the 6 words.",
+      "data": {
+        "message": "När du reflekterar över den positiva inverkan denna anmärkningsvärda portfölj har haft, kom ihåg att det inte bara handlar om avkastning; det handlar om att främja banbrytande innovationer – som att förenkla sjukvården, främja hållbara transporter och förbättra kommunikationstekniken – som tillsammans bidrar till en bättre och mer uppkopplad värld.",
+        "words": ["Mångsidig", "Innovativ", "Strategisk", "Global", "Blue-chip", "Motståndskraftig"],
+        "emojis": ["🎯", "💰", "📈", "🚀", "✨", "🌟", "💎", "🏆"]
+      }
+    },
+    {
+      "slideNumber": 5,
+      "title": "Din Resa Under Året",
+      "subtitle": "Se hur din portfölj har utvecklats",
+      "prompt": "Get monthly performance data showing value and return for each month",
+      "data": {
+        "monthlyPerformance": [
+          { "month": "Jan", "value": 1676922, "return": 1.2 },
+          { "month": "Feb", "value": 1690337, "return": 0.8 },
+          { "month": "Mar", "value": 1648079, "return": -2.5 },
+          { "month": "Apr", "value": 1672800, "return": 1.5 },
+          { "month": "Maj", "value": 1706256, "return": 2.0 },
+          { "month": "Jun", "value": 1723318, "return": 1.0 },
+          { "month": "Jul", "value": 1743998, "return": 1.2 },
+          { "month": "Aug", "value": 1726558, "return": -1.0 },
+          { "month": "Sep", "value": 1735191, "return": 0.5 },
+          { "month": "Okt", "value": 1769895, "return": 2.0 },
+          { "month": "Nov", "value": 1822992, "return": 3.0 },
+          { "month": "Dec", "value": 1837576, "return": 0.8 }
+        ]
+      }
+    }
+  ]
+}

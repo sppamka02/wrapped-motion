@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
 import { translations, getLanguageFromURL } from '../i18n';
-import masterData from '../../../Baseapp/src/data/master.json';
+import masterData from '../../../Baseapp/src/data/dataSource';
 
 const AnimatedNumber: React.FC<{ 
   value: number; 
@@ -69,7 +69,7 @@ const Slide3: React.FC = () => {
 
       <div ref={contentRef} className="summary-content" style={{ opacity: 0 }}>
         <p className="summary-text">
-          Du har byggt en portfölj med <strong>{numberOfHoldings} olika innehav</strong>, 
+          Du har byggt en portfölj med <strong>{numberOfHoldings} aktier</strong>, 
           vilket visar ditt engagemang för din ekonomiska framtid. Din diversifieringsstrategi 
           demonstrerar genomtänkta investeringar.
         </p>

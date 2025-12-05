@@ -9,14 +9,16 @@ import Slide2 from './Slide2';
 import Slide3 from './Slide3';
 import Slide4 from './Slide4';
 import Slide5 from './Slide5';
+import Slide6 from './Slide6';
 import { translations, getLanguageFromURL } from '../i18n';
 import '../styles/theme.less';
+import { i } from 'motion/react-client';
 
 const WrappedExperience: React.FC<WrappedProps> = ({ holdings, theme, onExit }) => {
   const [showIntro, setShowIntro] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
-  const totalSlides = 5;
+  const totalSlides = 6;
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides;
 
@@ -107,6 +109,7 @@ const WrappedExperience: React.FC<WrappedProps> = ({ holdings, theme, onExit }) 
     <Slide3 key={`slide3-${currentSlide}`} />,
     <Slide4 key={`slide4-${currentSlide}`} />,
     <Slide5 key={`slide5-${currentSlide}`} />,
+    <Slide6 key={`slide6-${currentSlide}`} />
   ];
 
   if (showIntro) {

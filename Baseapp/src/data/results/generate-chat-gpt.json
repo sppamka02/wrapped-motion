@@ -10,21 +10,21 @@
         "stats": [
           {
             "title": "Sociala medier",
-            "value": "70",
-            "description": "miljoner följare på dina tre största bolags sociala medier-konton (Apple, Microsoft och Nvidia – uppskattat tvärs över flera plattformar).",
-            "hint": "Stora globala techbolag har enorm räckvidd, vilket ger dina investeringar extra genomslag."
+            "value": "70 miljoner",
+            "description": "följare på dina tre största bolags sociala medier-konton (Apple, Microsoft och Nvidia – uppskattat tvärs över flera plattformar).",
+            "hints": ""
           },
           {
             "title": "Patent",
-            "value": "40 000+",
-            "description": "patentfamiljer och patentansökningar kopplade till Apple och Nvidia, plus ytterligare tusentals från Microsoft.",
-            "hint": "Det här speglar hur mycket dina bolag satsar på forskning och utveckling."
+            "value": "40 000+ ",
+            "description": "patentfamiljer patentansökningar kopplade till Apple och Nvidia, plus ytterligare tusentals från Microsoft.",
+            "hint": ""
           },
           {
             "title": "Anställda",
-            "value": "430 000",
+            "value": "430 000 ",
             "description": "anställda jobbar på Apple, Microsoft och Nvidia år 2025.",
-            "hint": "Bakom dina investeringar står hundratusentals människor som bygger framtidens teknik."
+            "hint": ""
           }
         ]
       }
@@ -176,6 +176,41 @@
           }
         ]
       }
-    }
-  ]
+    },
+    {
+  "slideNumber": 6,
+  "title": "Dina Största Branscher",
+  "subtitle": "Så här är dina pengar fördelade",
+  "prompt": "What are the top industries you're invested in?",
+  "data": {
+    "industries": [
+      {
+        "name": "Informationsteknik",
+        "percentOfPortfolio": 27.4,
+        "examples": ["Apple", "Microsoft", "Nvidia", "Samsung Electronics"]
+      },
+      {
+        "name": "Finans",
+        "percentOfPortfolio": 18.9,
+        "examples": ["Investor", "JP Morgan", "Banco do Brasil"]
+      },
+      {
+        "name": "Industrivaror & Tjänster",
+        "percentOfPortfolio": 13.2,
+        "examples": ["Volvo", "Atlas Copco", "ABB"]
+      },
+      {
+        "name": "Sjukvård",
+        "percentOfPortfolio": 10.5,
+        "examples": ["Novo Nordisk", "AstraZeneca", "United Health"]
+      },
+      {
+        "name": "Kommunikationstjänster",
+        "percentOfPortfolio": 8.1,
+        "examples": ["Alphabet", "Meta", "Tencent"]
+      }
+    ],
+    "summary": "Din portfölj är tungt exponerad mot global teknik, kompletterat med stabila finans- och industribolag, samt stora internationella hälsovårdsaktörer."
+  }
+}]
 }

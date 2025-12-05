@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
 import { translations, getLanguageFromURL } from '../i18n';
-import masterData from '../../../Baseapp/src/data/master.json';
+import masterData from '../../../Baseapp/src/data/dataSource';
 
 const AnimatedNumber: React.FC<{ 
   value: number; 
@@ -50,7 +50,7 @@ const Slide2: React.FC = () => {
   const averagePosition = slideData?.data.averagePosition || 0;
 
   const stats = [
-    { value: totalInvested, label: t.totalInvested, prefix: '', suffix: ' kr', decimals: 0 },
+    { value: totalInvested, label: t.totalInvested, prefix: '', suffix: '', decimals: 0 },
     { value: numberOfHoldings, label: t.numberOfHoldings, prefix: '', suffix: '', decimals: 0 },
     { value: averagePosition, label: 'Genomsnittlig Position', prefix: '', suffix: ' kr', decimals: 0 },
   ];

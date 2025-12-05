@@ -24,9 +24,9 @@
     "slide2": {
       "title": "Din Portfölj i Siffror",
       "totalValue": "Totalt Värde",
-      "totalInvested": "Totalt Investerat",
+      "totalInvested": "SEK Totalt Investerat",
       "totalReturn": "Total Avkastning",
-      "numberOfHoldings": "Antal Innehav"
+      "numberOfHoldings": "Totalt antal aktierposter"
     },
     "slide3": {
       "title": "Ditt År i Sammanfattning",
@@ -43,6 +43,10 @@
     "slide5": {
       "title": "Din Resa Under Året",
       "subtitle": "Se hur din portfölj har utvecklats"
+    },
+    "slide6": {
+      "title": "Dina Största Branscher",
+      "subtitle": "En översikt över dina största sektorer"
     },
     "backToHome": "Tillbaka till Hem"
   }

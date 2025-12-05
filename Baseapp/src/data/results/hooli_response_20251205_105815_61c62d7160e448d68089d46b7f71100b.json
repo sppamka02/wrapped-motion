@@ -1,0 +1,129 @@
+{
+  "slides": [
+    {
+      "slideNumber": 0,
+      "isLanding": true,
+      "title": "Portfolio Overview",
+      "subtitle": "Key Statistics",
+      "prompt": "Summarize the key statistics of your portfolio.",
+      "data": {
+        "stats": [
+          {
+            "title": "Total Value",
+            "value": "1,200,000 SEK",
+            "description": "The total current value of your portfolio.",
+            "hint": "Consider market fluctuations."
+          },
+          {
+            "title": "Annual Return",
+            "value": "8%",
+            "description": "The percentage return on your investment over the past year.",
+            "hint": "Compare with market averages."
+          },
+          {
+            "title": "Investment Duration",
+            "value": "5 years",
+            "description": "The total time your investments have been held.",
+            "hint": "Longer durations may yield better returns."
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 1,
+      "title": "Holdings",
+      "subtitle": "Current Investments",
+      "prompt": "List the current holdings in your portfolio.",
+      "data": {
+        "holdings": [
+          {
+            "name": "Tech Innovations Inc.",
+            "ticker": "TII",
+            "amountInvestedSek": 300000,
+            "percentOfPortfolio": 25
+          },
+          {
+            "name": "Green Energy Corp.",
+            "ticker": "GEC",
+            "amountInvestedSek": 200000,
+            "percentOfPortfolio": 16.67
+          },
+          {
+            "name": "Healthcare Solutions Ltd.",
+            "ticker": "HSL",
+            "amountInvestedSek": 150000,
+            "percentOfPortfolio": 12.5
+          },
+          {
+            "name": "Consumer Goods Co.",
+            "ticker": "CGC",
+            "amountInvestedSek": 250000,
+            "percentOfPortfolio": 20.83
+          },
+          {
+            "name": "Financial Services Group",
+            "ticker": "FSG",
+            "amountInvestedSek": 200000,
+            "percentOfPortfolio": 16.67
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 2,
+      "title": "Investment Summary",
+      "subtitle": "Portfolio Details",
+      "prompt": "Calculate the total invested, number of holdings, and average position size.",
+      "data": {
+        "totalInvested": 1200000,
+        "numberOfHoldings": 5,
+        "averagePosition": 240000
+      }
+    },
+    {
+      "slideNumber": 3,
+      "title": "Diversification Analysis",
+      "subtitle": "Risk Assessment",
+      "prompt": "Analyze the diversification of your portfolio.",
+      "data": {
+        "numberOfHoldings": 5,
+        "maxPercent": 25,
+        "diversificationScore": 75,
+        "message": "Your portfolio is well-diversified across different sectors."
+      }
+    },
+    {
+      "slideNumber": 4,
+      "title": "Investment Insights",
+      "subtitle": "Market Sentiment",
+      "prompt": "Provide insights based on market performance.",
+      "data": {
+        "message": "The market is showing positive trends, consider reinvesting.",
+        "subtitle": "Stay informed!",
+        "emojis": ["📈", "💼", "🌍"]
+      }
+    },
+    {
+      "slideNumber": 5,
+      "title": "Monthly Performance",
+      "subtitle": "Performance Trends",
+      "prompt": "Show monthly performance data.",
+      "data": {
+        "monthlyPerformance": [
+          { "month": "Jan", "value": 1100000, "return": 2.5 },
+          { "month": "Feb", "value": 1120000, "return": 1.8 },
+          { "month": "Mar", "value": 1150000, "return": 2.7 },
+          { "month": "Apr", "value": 1140000, "return": -0.9 },
+          { "month": "May", "value": 1160000, "return": 1.8 },
+          { "month": "Jun", "value": 1170000, "return": 0.9 },
+          { "month": "Jul", "value": 1180000, "return": 0.9 },
+          { "month": "Aug", "value": 1185000, "return": 0.4 },
+          { "month": "Sep", "value": 1190000, "return": 0.4 },
+          { "month": "Oct", "value": 1195000, "return": 0.4 },
+          { "month": "Nov", "value": 1198000, "return": 0.3 },
+          { "month": "Dec", "value": 1200000, "return": 0.2 }
+        ]
+      }
+    }
+  ]
+}

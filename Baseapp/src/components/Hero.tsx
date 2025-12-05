@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import masterData from '../data/results/generate-chat-gpt.json';
-// import masterData from '../data/master.json';
+import masterData from '../data/dataSource';
 import { translations, getLanguageFromURL } from '../i18n';
+import SagaIcon from '../assets/Saga.svg';
 
 
 interface HeroProps {
@@ -20,6 +20,10 @@ const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
   return (
     <div className="hero-container">
       <div className="hero-content">
+        <div className="saga-icon-container">
+          <img src={SagaIcon} alt="eSaga" className="saga-icon" />
+        </div>
+        
         <h1 className="hero-title">{landingSlide?.title || t.title}</h1>
         <p className="hero-subtitle">
           {landingSlide?.subtitle || t.subtitle}
@@ -36,8 +40,6 @@ const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
         </div>
 
         <button className="cta-button" onClick={onViewWrapped}>{t.viewFullWrapped}</button>
-        {/* include esaga icon here */}
-        
 
       </div>
     </div>
