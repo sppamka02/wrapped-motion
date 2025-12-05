@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
   const t = translations[currentLanguage].hero;
   
   // Get landing slide data from master.json
-  const landingSlide = masterDataRaw.slides.find(s => s.isLanding === true);
+  const landingSlide = masterData.slides.find(s => s.isLanding === true);
   const stats = landingSlide?.data?.stats || [];
   
   return (
