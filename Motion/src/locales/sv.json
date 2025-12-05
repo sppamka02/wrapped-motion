@@ -26,7 +26,7 @@
       "totalValue": "Totalt Värde",
       "totalInvested": "SEK Totalt Investerat",
       "totalReturn": "Total Avkastning",
-      "numberOfHoldings": "Totalt antal aktierposter"
+      "numberOfHoldings": "Totalt antal aktieposter"
     },
     "slide3": {
       "title": "Ditt År i Sammanfattning",
@@ -48,6 +48,14 @@
       "title": "Dina Största Branscher",
       "subtitle": "En översikt över dina största sektorer"
     },
-    "backToHome": "Tillbaka till Hem"
+    "slide7": {
+      "title": "Årets Raketskjutare",
+      "subtitle": ""
+    },
+    "slide8": {
+      "title": "Vi ses nästa år!",
+      "subtitle": "Tack för att du följde med på din Wrapped-resa 2025"
+    },
+    "backToHome": "Chatta vidare med Saga!"
   }
 }

@@ -121,6 +121,29 @@
           { "month": "Dec", "value": 143750, "return": -5.2 }
         ]
       }
+    },
+    {
+      "slideNumber": 7,
+      "title": "Årets Raketskjutare",
+      "subtitle": "Ditt största aktieinnehav 2025",
+      "prompt": "Get the best performing share in the user's portfolio",
+      "data": {
+        "name": "NVIDIA Corp",
+        "ticker": "NVDA",
+        "percentOfPortfolio": 2.46,
+        "yourExposureSek": 45179,
+        "summary": "Nvidia är ditt största enskilda aktieinnehav och en av de mest inflytelserika drivkrafterna i din portfölj."
+      }
+    },
+    {
+      "slideNumber": 8,
+      "title": "Vi ses nästa år!",
+      "subtitle": "Tack för att du följde med på din Wrapped-resa 2025",
+      "data": {
+        "redirectUrl": "http://localhost:5173/fond/2429072/hooli/",
+        "redirectDelay": 5000,
+        "message": "Du kommer automatiskt att omdirigeras om 5 sekunder..."
+      }
     }
   ]
 }

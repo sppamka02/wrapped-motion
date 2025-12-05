@@ -80,7 +80,11 @@ const Slide3: React.FC = () => {
         >
           <AnimatedNumber value={diversificationScore} suffix="%" />
         </div>
-        <p className="stat-label" style={{ fontSize: '1.5rem', marginTop: '1rem' }}>
+        <p 
+          className="stat-label" 
+          style={{ fontSize: '1.5rem', marginTop: '1rem', cursor: 'help' }}
+          title="Hur spridd portföljen är, beräknat som 1 minus summan av varje innehavs vikt i kvadrat."
+        >
           Diversifieringspoäng
         </p>
 

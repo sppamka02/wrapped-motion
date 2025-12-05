@@ -90,7 +90,7 @@ const Slide4: React.FC = () => {
           style={{ opacity: 0, transform: 'scale(0.8)' }}
         >
           <img 
-            src="/src/data/generate-image.png"
+            src="/src/data/last-generated-pic.png"
             alt="Your future journey"
             className="future-image"
             onError={(e) => {

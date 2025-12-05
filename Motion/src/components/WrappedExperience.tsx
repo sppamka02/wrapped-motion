@@ -8,8 +8,8 @@ import Slide1 from './Slide1';
 import Slide2 from './Slide2';
 import Slide3 from './Slide3';
 import Slide4 from './Slide4';
-import Slide5 from './Slide5';
-import Slide6 from './Slide6';
+import Slide7 from './Slide7';
+import Slide8 from './Slide8';
 import { translations, getLanguageFromURL } from '../i18n';
 import '../styles/theme.less';
 import { i } from 'motion/react-client';
@@ -108,8 +108,8 @@ const WrappedExperience: React.FC<WrappedProps> = ({ holdings, theme, onExit }) 
     <Slide2 key={`slide2-${currentSlide}`} />,
     <Slide3 key={`slide3-${currentSlide}`} />,
     <Slide4 key={`slide4-${currentSlide}`} />,
-    <Slide5 key={`slide5-${currentSlide}`} />,
-    <Slide6 key={`slide6-${currentSlide}`} />
+    <Slide7 key={`slide7-${currentSlide}`} />,
+    <Slide8 key={`slide8-${currentSlide}`} />
   ];
 
   if (showIntro) {
@@ -155,7 +155,7 @@ const WrappedExperience: React.FC<WrappedProps> = ({ holdings, theme, onExit }) 
         {currentSlide === totalSlides - 1 ? (
           <button
             className="nav-button nav-button-primary"
-            onClick={onExit}
+            onClick={() => window.location.href = 'http://localhost:5173/fond/2429072/hooli'}
           >
             {t.backToHome}
           </button>
