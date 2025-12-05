@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import masterData from '../data/master.json';
+import masterDataRaw from '../data/results/hooli_response_20251205_103437_40c357a08365411586460b648ebd9b85.json';
+// import masterData from '../data/master.json';
 import { translations, getLanguageFromURL } from '../i18n';
 
 
@@ -13,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
   const t = translations[currentLanguage].hero;
   
   // Get landing slide data from master.json
-  const landingSlide = masterData.slides.find(s => s.isLanding === true);
+  const landingSlide = masterDataRaw.slides.find(s => s.isLanding === true);
   const stats = landingSlide?.data?.stats || [];
   
   return (
