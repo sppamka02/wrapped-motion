@@ -2,25 +2,20 @@
 // Slide 1: Top Holdings - Using motion.dev
 import React, { useEffect, useRef } from 'react';
 import { animate } from 'motion';
-import { Holding } from '../types';
 import { translations, getLanguageFromURL } from '../i18n';
+import masterData from '../../../Baseapp/src/data/master.json';
 
-interface Slide1Props {
-  holdings: Holding[];
-}
-
-const Slide1: React.FC<Slide1Props> = ({ holdings }) => {
+const Slide1: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides.slide1;
 
-  const topHoldings = holdings
-    .sort((a, b) => b.percentOfPortfolio - a.percentOfPortfolio)
-    .slice(0, 5);
+  const slideData = masterData.slides.find(s => s.slideNumber === 1);
+  const topHoldings = slideData?.data.holdings || [];
 
   useEffect(() => {
-    console.log('Slide1 mounted, holdings count:', holdings.length);
+    console.log('Slide1 mounted, holdings count:', topHoldings.length);
     console.log('Top holdings:', topHoldings);
     
     if (titleRef.current) {
@@ -38,7 +33,7 @@ const Slide1: React.FC<Slide1Props> = ({ holdings }) => {
         );
       });
     }
-  }, [holdings.length]); // Re-run when holdings change
+  }, []); // Run once on mount
 
   return (
     <div className="slide">
@@ -47,11 +42,11 @@ const Slide1: React.FC<Slide1Props> = ({ holdings }) => {
         className="slide-title" 
         style={{ opacity: 0, transform: 'translateY(-50px)' }}
       >
-        {t.title}
+        {slideData?.title || t.title}
       </h1>
 
       <p className="slide-subtitle" style={{ marginBottom: '2rem' }}>
-        {t.subtitle}
+        {slideData?.subtitle || t.subtitle}
       </p>
 
       <ul ref={listRef} className="holdings-list">

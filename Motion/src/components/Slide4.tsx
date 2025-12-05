@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { animate } from 'motion';
 import { translations, getLanguageFromURL } from '../i18n';
+import masterData from '../../../Baseapp/src/data/master.json';
 
 const Slide4: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -13,7 +14,8 @@ const Slide4: React.FC = () => {
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides.slide4;
 
-  const emojis = ['🎯', '💰', '📈', '🚀', '✨', '🌟', '💎', '🏆'];
+  const slideData = masterData.slides.find(s => s.slideNumber === 4);
+  const emojis = slideData?.data.emojis || ['🎯', '💰', '📈', '🚀', '✨', '🌟', '💎', '🏆'];
 
   useEffect(() => {
     // First show emojis
@@ -106,9 +108,9 @@ const Slide4: React.FC = () => {
           className="future-content"
           style={{ opacity: 0, transform: 'translateY(30px)' }}
         >
-          <h1 className="slide-title future-title">{t.title}</h1>
-          <p className="future-message">{t.message}</p>
-          <p className="future-subtitle">{t.subtitle}</p>
+          <h1 className="slide-title future-title">{slideData?.title || t.title}</h1>
+          <p className="future-message">{slideData?.data.message || t.message}</p>
+          <p className="future-subtitle">{slideData?.data.subtitle || t.subtitle}</p>
         </div>
       )}
     </div>

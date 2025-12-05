@@ -1,0 +1,117 @@
+{
+  "slides": [
+    {
+      "slideNumber": 1,
+      "title": "Welcome to Your 2025 Investment Journey",
+      "prompt": "Get the total invested amount, total returns, and return percentage for the year",
+      "data": {
+        "year": 2025,
+        "totalInvested": 125000,
+        "totalReturns": 18750,
+        "returnPercentage": 15.0
+      }
+    },
+    {
+      "slideNumber": 2,
+      "title": "Portfolio Overview",
+      "prompt": "Get the portfolio breakdown showing total number of funds",
+      "data": {
+        "portfolioBreakdown": {
+          "funds": 100
+        }
+      }
+    },
+    {
+      "slideNumber": 3,
+      "title": "Top Performing Asset",
+      "prompt": "Get the top performing asset with its name, return percentage, and sector",
+      "data": {
+        "topPerformingAsset": {
+          "name": "Tech Growth Fund",
+          "return": 34.5,
+          "sector": "Technology"
+        }
+      }
+    },
+    {
+      "slideNumber": 4,
+      "title": "Sector Allocation",
+      "prompt": "Get the sector allocation breakdown showing percentage distribution across all sectors",
+      "data": {
+        "sectorAllocation": {
+          "Technology": 32,
+          "Healthcare": 18,
+          "Financials": 15,
+          "Consumer": 12,
+          "Energy": 8,
+          "RealEstate": 10,
+          "Other": 5
+        }
+      }
+    },
+    {
+      "slideNumber": 5,
+      "title": "Monthly Performance",
+      "prompt": "Get the monthly performance data showing value and return for each month",
+      "data": {
+        "monthlyPerformance": [
+          { "month": "Jan", "value": 125000, "return": 2.1 },
+          { "month": "Feb", "value": 127625, "return": 2.1 },
+          { "month": "Mar", "value": 123668, "return": -3.1 },
+          { "month": "Apr", "value": 126909, "return": 2.6 },
+          { "month": "Maj", "value": 130175, "return": 2.6 },
+          { "month": "Jun", "value": 132479, "return": 1.8 },
+          { "month": "Jul", "value": 133809, "return": 1.0 },
+          { "month": "Aug", "value": 136149, "return": 1.7 },
+          { "month": "Sep", "value": 137829, "return": 1.2 },
+          { "month": "Okt", "value": 140212, "return": 1.7 },
+          { "month": "Nov", "value": 151709, "return": 8.2 },
+          { "month": "Dec", "value": 143750, "return": -5.2 }
+        ]
+      }
+    },
+    {
+      "slideNumber": 6,
+      "title": "Best and Worst Months",
+      "prompt": "Get the best and worst performing months with their returns",
+      "data": {
+        "monthlyStats": {
+          "bestMonth": {
+            "month": "November",
+            "return": 8.2
+          },
+          "worstMonth": {
+            "month": "March",
+            "return": -3.1
+          }
+        }
+      }
+    },
+    {
+      "slideNumber": 7,
+      "title": "Top Performing Funds",
+      "prompt": "Get the top 3 performing funds with their names, returns, and sectors",
+      "data": {
+        "fundPerformance": {
+          "topFunds": [
+            {
+              "name": "Tech Growth Fund",
+              "return": 34.5,
+              "sector": "Technology"
+            },
+            {
+              "name": "Healthcare Innovation Fund",
+              "return": 22.3,
+              "sector": "Healthcare"
+            },
+            {
+              "name": "Global Equity Fund",
+              "return": 18.7,
+              "sector": "Diversified"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

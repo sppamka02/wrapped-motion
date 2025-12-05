@@ -102,11 +102,11 @@ const WrappedExperience: React.FC<WrappedProps> = ({ holdings, theme, onExit }) 
   }, [currentSlide]);
 
   const slides = [
-    <Slide1 holdings={holdings} key={`slide1-${currentSlide}`} />,
-    <Slide2 holdings={holdings} key={`slide2-${currentSlide}`} />,
-    <Slide3 holdings={holdings} key={`slide3-${currentSlide}`} />,
+    <Slide1 key={`slide1-${currentSlide}`} />,
+    <Slide2 key={`slide2-${currentSlide}`} />,
+    <Slide3 key={`slide3-${currentSlide}`} />,
     <Slide4 key={`slide4-${currentSlide}`} />,
-    <Slide5 holdings={holdings} key={`slide5-${currentSlide}`} />,
+    <Slide5 key={`slide5-${currentSlide}`} />,
   ];
 
   if (showIntro) {

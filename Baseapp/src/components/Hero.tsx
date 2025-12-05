@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import investmentData from '../data/investmentData.json';
+import masterData from '../data/master.json';
 import { translations, getLanguageFromURL } from '../i18n';
 
 interface HeroProps {
@@ -10,35 +10,27 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].hero;
+  
+  // Get landing slide data from master.json
+  const landingSlide = masterData.slides.find(s => s.isLanding === true);
+  const stats = landingSlide?.data?.stats || [];
+  
   return (
     <div className="hero-container">
       <div className="hero-content">
-        <h1 className="hero-title">{t.title}</h1>
+        <h1 className="hero-title">{landingSlide?.title || t.title}</h1>
         <p className="hero-subtitle">
-          {t.subtitle}
+          {landingSlide?.subtitle || t.subtitle}
         </p>
         
         <div className="stats-grid">
-          <div className="stat-card">
-            <div className="stat-value">{investmentData.totalInvested.toLocaleString()} kr</div>
-            <div className="stat-label">{t.totalInvested}</div>
-          </div>
-          
-          <div className="stat-card highlight">
-            <div className="stat-value">+{investmentData.returnPercentage}%</div>
-            <div className="stat-label">{t.annualReturns}</div>
-          </div>
-          
-          <div className="stat-card">
-            <div className="stat-value">{investmentData.totalReturns.toLocaleString()} kr</div>
-            <div className="stat-label">{t.profitEarned}</div>
-          </div>
-        </div>
-
-        <div className="hero-highlight">
-          <h2>{t.topPerformer}</h2>
-          <p className="top-asset">{investmentData.topPerformingAsset.name}</p>
-          <p className="top-return">+{investmentData.topPerformingAsset.return}% {t.returns}</p>
+          {stats.map((stat, index) => (
+            <div key={index} className={`stat-card ${index === 1 ? 'highlight' : ''}`}>
+              <div className="stat-value">{stat.value}</div>
+              <div className="stat-label">{stat.description}</div>
+              {stat.hint && <div className="stat-hint">{stat.hint}</div>}
+            </div>
+          ))}
         </div>
 
         <button className="cta-button" onClick={onViewWrapped}>{t.viewFullWrapped}</button>

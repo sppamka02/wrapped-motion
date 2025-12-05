@@ -2,15 +2,10 @@
 // Slide 5: Your Year Journey with animated line - Using motion.dev
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
-import { Holding } from '../types';
 import { translations, getLanguageFromURL } from '../i18n';
-import investmentData from '../../../Baseapp/src/data/investmentData.json';
+import masterData from '../../../Baseapp/src/data/master.json';
 
-interface Slide5Props {
-  holdings: Holding[];
-}
-
-const Slide5: React.FC<Slide5Props> = () => {
+const Slide5: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -19,7 +14,8 @@ const Slide5: React.FC<Slide5Props> = () => {
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides.slide5;
 
-  const monthlyData = investmentData.monthlyPerformance;
+  const slideData = masterData.slides.find(s => s.slideNumber === 5);
+  const monthlyData = slideData?.data.monthlyPerformance || [];
 
   const width = 800;
   const height = 400;
@@ -93,7 +89,7 @@ const Slide5: React.FC<Slide5Props> = () => {
         className="slide-title" 
         style={{ opacity: 0, transform: 'translateY(-50px)' }}
       >
-        {t.title}
+        {slideData?.title || t.title}
       </h1>
 
       <p 
@@ -101,7 +97,7 @@ const Slide5: React.FC<Slide5Props> = () => {
         className="slide-subtitle" 
         style={{ opacity: 0, transform: 'translateY(-20px)', marginBottom: '2rem', color: 'var(--wrapped-text-secondary)', fontSize: '1.2rem' }}
       >
-        {t.subtitle}
+        {slideData?.subtitle || t.subtitle}
       </p>
 
       <div 

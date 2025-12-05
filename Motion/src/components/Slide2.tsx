@@ -2,12 +2,8 @@
 // Slide 2: Your Portfolio in Numbers - Using motion.dev
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
-import { Holding } from '../types';
 import { translations, getLanguageFromURL } from '../i18n';
-
-interface Slide2Props {
-  holdings: Holding[];
-}
+import masterData from '../../../Baseapp/src/data/master.json';
 
 const AnimatedNumber: React.FC<{ 
   value: number; 
@@ -42,15 +38,16 @@ const AnimatedNumber: React.FC<{
   );
 };
 
-const Slide2: React.FC<Slide2Props> = ({ holdings }) => {
+const Slide2: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides.slide2;
 
-  const totalInvested = holdings.reduce((sum, h) => sum + h.amountInvestedSek, 0);
-  const numberOfHoldings = holdings.length;
-  const averagePosition = totalInvested / numberOfHoldings;
+  const slideData = masterData.slides.find(s => s.slideNumber === 2);
+  const totalInvested = slideData?.data.totalInvested || 0;
+  const numberOfHoldings = slideData?.data.numberOfHoldings || 0;
+  const averagePosition = slideData?.data.averagePosition || 0;
 
   const stats = [
     { value: totalInvested, label: t.totalInvested, prefix: '', suffix: ' kr', decimals: 0 },
@@ -82,7 +79,7 @@ const Slide2: React.FC<Slide2Props> = ({ holdings }) => {
         className="slide-title" 
         style={{ opacity: 0, transform: 'scale(0.8)' }}
       >
-        {t.title}
+        {slideData?.title || t.title}
       </h1>
 
       <div ref={gridRef} className="stats-grid">

@@ -2,12 +2,8 @@
 // Slide 3: Your Year at a Glance - Using motion.dev
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
-import { Holding } from '../types';
 import { translations, getLanguageFromURL } from '../i18n';
-
-interface Slide3Props {
-  holdings: Holding[];
-}
+import masterData from '../../../Baseapp/src/data/master.json';
 
 const AnimatedNumber: React.FC<{ 
   value: number; 
@@ -31,15 +27,16 @@ const AnimatedNumber: React.FC<{
   return <span>{Math.floor(count)}{suffix}</span>;
 };
 
-const Slide3: React.FC<Slide3Props> = ({ holdings }) => {
+const Slide3: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const currentLanguage = getLanguageFromURL();
   const t = translations[currentLanguage].slides.slide3;
 
-  const numberOfHoldings = holdings.length;
-  const maxPercent = Math.max(...holdings.map(h => h.percentOfPortfolio));
-  const diversificationScore = Math.round((1 - maxPercent / 100) * 100);
+  const slideData = masterData.slides.find(s => s.slideNumber === 3);
+  const numberOfHoldings = slideData?.data.numberOfHoldings || 0;
+  const diversificationScore = slideData?.data.diversificationScore || 0;
+  const message = slideData?.data.message || t.message;
 
   useEffect(() => {
     if (titleRef.current) {
@@ -67,7 +64,7 @@ const Slide3: React.FC<Slide3Props> = ({ holdings }) => {
         className="slide-title" 
         style={{ opacity: 0, transform: 'rotateX(-90deg)' }}
       >
-        {t.title}
+        {slideData?.title || t.title}
       </h1>
 
       <div ref={contentRef} className="summary-content" style={{ opacity: 0 }}>
@@ -88,7 +85,7 @@ const Slide3: React.FC<Slide3Props> = ({ holdings }) => {
         </p>
 
         <p className="summary-text" style={{ marginTop: '3rem' }}>
-          {t.message}
+          {message}
         </p>
       </div>
     </div>

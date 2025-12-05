@@ -15,13 +15,13 @@ import portfolioData from './data/portfolio.json';
 function App() {
   const [showWrapped, setShowWrapped] = useState(false);
 
-  // Define Spotify-like theme - CUSTOMIZE THESE COLORS AS NEEDED
-  const spotifyTheme: WrappedTheme = {
-    primary: '#E43C2F',      // SPP red
-    secondary: '#7B1313',    // Dark red
-    background: '#2B2621',   // Lighter dark beige background
-    accent: '#E43C2F',       // SPP red accent
-  };
+  // Define SPP theme matching hooli-client experience
+const spotifyTheme: WrappedTheme = {
+  primary: '#C8102E',      // Deeper SPP red (closer to text)
+  secondary: '#8B0000',    // Dark red
+  background: '#1C1917',   // Deep warm brown-black (SPP tone)
+  accent: '#E30613',       // Bright SPP red for accents
+};
 
   // Alternative theme options (uncomment to use):
   

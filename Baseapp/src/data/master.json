@@ -1,0 +1,126 @@
+{
+  "slides": [
+    {
+      "slideNumber": 0,
+      "isLanding": true,
+      "title": "Din Fondförsäkring 2025",
+      "subtitle": "Se hur din portfölj har utvecklats under året",
+      "prompt": "Get overview statistics for landing page with custom insights about social media followers, patents, and employees",
+      "data": {
+        "stats": [
+          {
+            "title": "Lorem ipsum",
+            "value": "8,7",
+            "description": "Biljoner följare på dina företags sociala medier-konton",
+            "hint": "Hint"
+          },
+          {
+            "title": "Lorem ipsum",
+            "value": "731",
+            "description": "Antalet patent dina företag har sökt under året",
+            "hint": "Hint"
+          },
+          {
+            "title": "Lorem ipsum",
+            "value": "3 981 181",
+            "description": "anställda jobbar för dina företag",
+            "hint": "Hint"
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 1,
+      "title": "Dina Toppinnehav",
+      "subtitle": "Dina viktigaste investeringar",
+      "prompt": "Get the top 5 holdings sorted by percentage of portfolio",
+      "data": {
+        "holdings": [
+          {
+            "name": "Tesla Inc",
+            "ticker": "TSLA",
+            "amountInvestedSek": 45000,
+            "percentOfPortfolio": 28
+          },
+          {
+            "name": "Apple Inc",
+            "ticker": "AAPL",
+            "amountInvestedSek": 38000,
+            "percentOfPortfolio": 24
+          },
+          {
+            "name": "Microsoft Corporation",
+            "ticker": "MSFT",
+            "amountInvestedSek": 32000,
+            "percentOfPortfolio": 20
+          },
+          {
+            "name": "NVIDIA Corporation",
+            "ticker": "NVDA",
+            "amountInvestedSek": 22000,
+            "percentOfPortfolio": 14
+          },
+          {
+            "name": "Spotify Technology",
+            "ticker": "SPOT",
+            "amountInvestedSek": 15000,
+            "percentOfPortfolio": 9
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 2,
+      "title": "Din Portfölj i Siffror",
+      "prompt": "Get portfolio statistics including total invested, number of holdings, and average position",
+      "data": {
+        "totalInvested": 160000,
+        "numberOfHoldings": 6,
+        "averagePosition": 26666.67
+      }
+    },
+    {
+      "slideNumber": 3,
+      "title": "Ditt År i Sammanfattning",
+      "prompt": "Get portfolio summary with diversification score",
+      "data": {
+        "numberOfHoldings": 6,
+        "maxPercent": 28,
+        "diversificationScore": 72,
+        "message": "Du fortsätter att bygga en portfölj för framtiden!"
+      }
+    },
+    {
+      "slideNumber": 4,
+      "title": "Din Framtid Väntar",
+      "prompt": "Get inspirational closing message",
+      "data": {
+        "message": "Tack för att du är med oss på din investeringsresa",
+        "subtitle": "Vi ser fram emot att hjälpa dig nå dina mål 2025!",
+        "emojis": ["🎯", "💰", "📈", "🚀", "✨", "🌟", "💎", "🏆"]
+      }
+    },
+    {
+      "slideNumber": 5,
+      "title": "Din Resa Under Året",
+      "subtitle": "Se hur din portfölj har utvecklats",
+      "prompt": "Get monthly performance data showing value and return for each month",
+      "data": {
+        "monthlyPerformance": [
+          { "month": "Jan", "value": 125000, "return": 2.1 },
+          { "month": "Feb", "value": 127625, "return": 2.1 },
+          { "month": "Mar", "value": 123668, "return": -3.1 },
+          { "month": "Apr", "value": 126909, "return": 2.6 },
+          { "month": "Maj", "value": 130175, "return": 2.6 },
+          { "month": "Jun", "value": 132479, "return": 1.8 },
+          { "month": "Jul", "value": 133809, "return": 1.0 },
+          { "month": "Aug", "value": 136149, "return": 1.7 },
+          { "month": "Sep", "value": 137829, "return": 1.2 },
+          { "month": "Okt", "value": 140212, "return": 1.7 },
+          { "month": "Nov", "value": 151709, "return": 8.2 },
+          { "month": "Dec", "value": 143750, "return": -5.2 }
+        ]
+      }
+    }
+  ]
+}

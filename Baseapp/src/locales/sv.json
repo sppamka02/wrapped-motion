@@ -18,27 +18,31 @@
       "text3c": "Tillsammans"
     },
     "slide1": {
-      "title": "Dina Toppinnehav 2025",
-      "subtitle": "De investeringar som definierade ditt år"
+      "title": "Dina Toppinnehav",
+      "subtitle": "Dina viktigaste investeringar"
     },
     "slide2": {
-      "title": "Din Fondförsäkring i Siffror",
+      "title": "Din Portfölj i Siffror",
       "totalValue": "Totalt Värde",
       "totalInvested": "Totalt Investerat",
       "totalReturn": "Total Avkastning",
       "numberOfHoldings": "Antal Innehav"
     },
     "slide3": {
-      "title": "Din Fondförsäkring 2025",
+      "title": "Ditt År i Sammanfattning",
       "invested": "Investerat",
       "grown": "Växte till",
       "returns": "Avkastning",
-      "message": "Tillsammans bygger vi din framtid!"
+      "message": "Du fortsätter att bygga en portfölj för framtiden!"
     },
     "slide4": {
       "title": "Din Framtid Väntar",
-      "message": "Varje investering du gör idag är ett steg närmare dina drömmar.",
-      "subtitle": "Fortsätt din resa mot ekonomisk frihet med SPP."
+      "message": "Tack för att du är med oss på din investeringsresa",
+      "subtitle": "Vi ser fram emot att hjälpa dig nå dina mål 2025!"
+    },
+    "slide5": {
+      "title": "Din Resa Under Året",
+      "subtitle": "Se hur din portfölj har utvecklats"
     },
     "backToHome": "Tillbaka till Hem"
   }
