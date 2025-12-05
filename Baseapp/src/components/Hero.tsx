@@ -3,6 +3,7 @@ import './Hero.css';
 import masterData from '../data/master.json';
 import { translations, getLanguageFromURL } from '../i18n';
 
+
 interface HeroProps {
   onViewWrapped: () => void;
 }
@@ -34,6 +35,9 @@ const Hero: React.FC<HeroProps> = ({ onViewWrapped }) => {
         </div>
 
         <button className="cta-button" onClick={onViewWrapped}>{t.viewFullWrapped}</button>
+        {/* include esaga icon here */}
+        
+
       </div>
     </div>
   );
