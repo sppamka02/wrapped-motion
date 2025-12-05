@@ -5,7 +5,7 @@
       "isLanding": true,
       "title": "Din Fondförsäkring 2025",
       "subtitle": "Se hur din portfölj har utvecklats under året",
-      "prompt": "Get overview statistics for landing page with custom insights about social media followers, patents, and employees",
+      "prompt": "Get overview statistics social media followers, patents, and employees for the top 3 comopanies tou are invested in",
       "data": {
         "stats": [
           {
