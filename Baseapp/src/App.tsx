@@ -16,12 +16,12 @@ function App() {
   const [showWrapped, setShowWrapped] = useState(false);
 
   // Define SPP theme matching hooli-client experience
-const spotifyTheme: WrappedTheme = {
-  primary: '#C8102E',      // Deeper SPP red (closer to text)
-  secondary: '#8B0000',    // Dark red
-  background: '#1C1917',   // Deep warm brown-black (SPP tone)
-  accent: '#E30613',       // Bright SPP red for accents
-};
+  const spotifyTheme: WrappedTheme = {
+    primary: '#d1d1d1ff',      // SPP brand red
+    secondary: '#8B0000',    // Dark red
+    background: '#1a1a2e',   // Dark navy background
+    accent: '#E30613',       // SPP red accent
+  };
 
   // Alternative theme options (uncomment to use):
   
